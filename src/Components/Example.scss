@@ -1,0 +1,78 @@
+.br-exple {
+  width: auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  form {
+    width: 500px;
+    label {
+      font-size: 16px;
+      padding: 12px 0px;
+      display: inline-block;
+    }
+    input,
+    textarea {
+      width: -webkit-fill-available;
+      padding: 10px 0px;
+      text-indent: 16px;
+      border: 1px solid #bfbfbf;
+      outline: none;
+      font-size: 12px;
+    }
+    .text-danger{
+      color: red;
+    }
+    select {
+      height: 30px;
+      width: -webkit-fill-available;
+      padding: 10px 0px;
+      text-indent: 16px;
+      border: 1px solid #bfbfbf;
+      outline: none;
+      font-size: 12px;
+    }
+    .el-check-row {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .btn-group{
+      display: flex;
+      // flex-wrap: wrap;
+      justify-content: space-between;
+      button {
+        min-width: 110px;
+        font-size: 12px;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        outline: none;
+        margin: 20px 0px 0px 0px;
+        background-color: darkcyan;
+        cursor: pointer;
+        &:last-child {
+          margin: 20px 0px 0px 0px;
+        }
+        &.bt-active {
+          background-color: gray;
+        }
+      }
+    }
+    
+  }
+}
+
+.pl {
+  padding-left: 10px !important;
+}
+
+.text-danger {
+  position: relative;
+  top: 9px;
+  left: 2px;
+
+  &::before {
+    display: none;
+  }
+}
