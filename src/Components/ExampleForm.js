@@ -10,6 +10,8 @@ let initObj;
 
 class ExampleForm extends React.Component {
 
+
+
     onLoadform = () => {
         initObj = webConst.setDefaultValue(initObj);
         this.props.preLoadingDataRequest(initObj);
